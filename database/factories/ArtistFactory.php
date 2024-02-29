@@ -1,6 +1,7 @@
 <?php
 
 namespace Database\Factories;
+use App\Models\Artist;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 
@@ -19,7 +20,7 @@ class ArtistFactory extends Factory
         return [
             'name' => $this->faker->name,
             'year' => $this->faker->year,
-            'website' => $this->faker->url;
+            'website' => $this->faker->url
         ];
     }
 }
